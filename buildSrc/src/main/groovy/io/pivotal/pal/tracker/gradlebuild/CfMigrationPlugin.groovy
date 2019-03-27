@@ -26,6 +26,7 @@ class CfMigrationPlugin implements Plugin<Project> {
                     doLast {
                         println "Acquiring database credentials"
                         credentials = acquireMysqlCredentials(databaseInstanceName)
+
                     }
                 }
 
